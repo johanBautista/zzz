@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Colors! 
+  background: #00FF00;
+  color: #3CFF65;
+  color: #EFEFEF;
+  background: #1A2234; */
 :root {
-  --foreground-rgb: 0, 0, 233;
+  --foreground-rgb: 26, 34, 52;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 26, 34, 52;
     --background-start-rgb: 255, 255, 255;
     --background-end-rgb: 255, 255, 255;
   }
@@ -21,4 +26,32 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.stack {
+  display: block;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+.stack>a {
+  margin: 5px 10px 5px 0;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.buttonStack {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: rgba(180, 156, 234, 0.19);
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+
+.buttonStack:hover {
+  background: rgb(0, 255, 0, .9);
+  color: var(--color-button-text);
 }
