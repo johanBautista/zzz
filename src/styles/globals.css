@@ -2,56 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Colors! 
-  background: #00FF00;
-  color: #3CFF65;
-  color: #EFEFEF;
-  background: #1A2234; */
-:root {
-  --foreground-rgb: 26, 34, 52;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 26, 34, 52;
-    --background-start-rgb: 255, 255, 255;
-    --background-end-rgb: 255, 255, 255;
+/* declaring the css variables colors */
+:root {
+  --color-background: #fffcfc;
+  --color-primary: #2f4f4f;
+  --color-primary-accent: darkslateblue;
+  --color-button: #758CDF;
+  --color-button-hover: #324caa;
+  --color-button-text: #fffcfc;
+  --color-anchor: #e3870f;
+  --color-nav-hover: #fa0e0e;
+}
+
+[data-theme="dark"] {
+  --color-primary: #e8e8e8;
+  --color-background: #252b36;
+}
+
+html,
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* HERO */
+
+.lineHeight {
+  line-height: 2.3rem;
+}
+
+@media(min-width:700px) {
+  .lineHeight {
+    line-height: 4rem !important;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-}
-
-.stack {
-  display: block;
-  flex-direction: row;
-  list-style: none;
-  padding: 0;
-  word-wrap: break-word;
-}
-
-.stack>a {
-  margin: 5px 10px 5px 0;
+media .linkAnimate {
   display: inline-block;
-  font-size: 0.75rem;
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
-.buttonStack {
-  padding: 5px 15px;
-  border-radius: 10px;
-  background: rgba(180, 156, 234, 0.19);
-  cursor: pointer;
-  font-weight: 600;
-  border: none;
+.linkAnimate::after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 50px;
+  background: linear-gradient(to right, #758cdf, #758cdf63, #758cdf1b);
+  margin-top: -40px;
+  margin-left: -10px;
+  transition: width .3s;
 }
 
-.buttonStack:hover {
-  background: rgb(0, 255, 0, .9);
-  color: var(--color-button-text);
+.linkAnimate:hover::after {
+  width: 125%;
+  transition: width .3s;
 }
