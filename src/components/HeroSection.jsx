@@ -4,7 +4,7 @@ import heroImage from '@images/hero.webp'
 const HeroSection = () => {
   return (
     <>
-      <section className="mx-auto px-4 sm:px-6 pt-32 md:pt-36 xl:pt-52 2xl:pt-64 min-h-screen max-w-[900px]">
+      <section className="mx-auto px-4 sm:px-6 pt-32 md:pt-36 lg:pt-80 min-h-screen max-w-[900px]">
         <div className="flex flex-col md:flex-row items-center md:justify-between">
           {/* Text Content */}
           <div className="md:w-1/2">

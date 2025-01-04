@@ -21,8 +21,10 @@
 }
 
 [data-theme="dark"] {
+  --color-primary:#b9b9b9b6;
+  /**
   --color-primary: #e8e8e8;
-  /**--color-background: #252b36;37474F*/
+  --color-background: #252b36;37474F*/
   --color-background: #37474F;
 }
 
