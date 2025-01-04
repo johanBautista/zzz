@@ -20,16 +20,25 @@ const TechnologiesSection = () => {
   ]
 
   return (
-    <div className='w-full'>
-      <div className="container mx-auto my-16">
-        <div className="grid grid-cols-3 gap-4 p-4 md:grid-cols-5">
-          {technologies.map((tech, index) => (
-            <div key={index} className="text-center transition-colors duration-300 ease-in-out hover:text-darkseagreen">
-              <i className={`${tech.icon} text-gray-400 text-6xl md:text-8xl transition-colors duration-300 ease-in-out hover:text-darkseagreen/50`} />
-              <p className="mt-2 text-xs lg:text-base transition-colors duration-300 ease-in-out">{tech.name}</p>
-            </div>
-          ))}
+    <div className="container mx-auto my-48 lg:my-24">
+      <div className='w-full md:flex md:justify-center'>
+        <div className="flex w-full sm:w-1/4 items-center md:justify-center mb-8">
+          <span>
+            📗
+          </span>
+          <h2 className='text-primary font-semibold tracking-wider sm:text-end px-1'>
+            TECNOLOGÍAS
+          </h2>
         </div>
+      </div>
+
+      <div className="grid grid-cols-3 gap-4 p-4 md:grid-cols-5">
+        {technologies.map((tech, index) => (
+          <div key={index} className="text-center transition-colors duration-300 ease-in-out hover:text-darkseagreen">
+            <i className={`${tech.icon} text-gray-400 text-6xl md:text-8xl transition-colors duration-300 ease-in-out hover:text-darkseagreen/50`} />
+            <p className="mt-2 text-xs lg:text-base transition-colors duration-300 ease-in-out">{tech.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   )

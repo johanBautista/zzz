@@ -51,18 +51,7 @@ const ExperiencesSection = () => {
 
   const data = selectedTab === 'experience' ? experienceData : educationData
   return (
-    <section className={classes.experience}>
-      <div className='w-full mx-auto flex justify-center'>
-        <div className="w-1/4 flex items-center">
-          <span>
-            🧗🏼‍♂️
-          </span>
-          <h2 className='text-indigo-500/75 font-semibold tracking-wider sm:text-end px-1'>
-            ROADMAP
-          </h2>
-        </div>
-      </div>
-
+    <section className={`${classes.experience} mb-20`}>
       <div className={classes['experience-section']}>
         <div className={classes['experience-section__switch']}>
           <button
@@ -100,7 +89,7 @@ const ExperiencesSection = () => {
                       </div>
                       <p className={classes['experience-section__description']}>{item.description}</p>
                     </>
-                    )
+                  )
                   : (
                     <>
                       <h3 className={classes['experience-section__title']}>{item.company}</h3>
@@ -110,13 +99,13 @@ const ExperiencesSection = () => {
                       </div>
                       <p className={classes['experience-section__description']}>{item.summary}</p>
                     </>
-                    )}
+                  )}
               </div>
             </div>
           ))}
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

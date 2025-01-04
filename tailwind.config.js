@@ -14,6 +14,15 @@ module.exports = {
       },
       colors: {
         darkseagreen: '#8FBC8F'
+      },
+      keyframes: {
+        'download-bar': {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' }
+        }
+      },
+      animation: {
+        'download-bar': 'download-bar 2s linear forwards'
       }
     }
   },
