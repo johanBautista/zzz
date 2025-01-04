@@ -1,0 +1,182 @@
+.experience{
+  margin: 4rem 0;
+}
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+  &__switch {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  
+  &__tab {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    &--active {
+      background-color: rgb(99 102 241 / 85% );
+      color: white;
+    }
+  } 
+
+  &__timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1rem auto; 
+    gap: 1rem;
+    padding: 0;
+    &::before {
+      left: -0.1rem; 
+      transform: translateX(0);
+    }
+  
+    // Línea vertical (roadmap)
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -0.1rem;
+      transform: translateX(0);
+      width: 4px;
+      height: 100%;
+      background-color: rgb(99 102 241 );
+    }
+}
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    max-width: 280px;
+    padding: 1rem;
+    border: 1px dashed rgba(128, 128, 128, 0.282);
+    border-radius: 4px;
+
+    &--left,
+    &--right {
+      grid-column: 2;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -2.5rem;
+      right: auto;
+      top: 1rem;
+      width: 1rem;
+      height: 1rem;
+      background-color: rgb(99 102 241 );
+      border-radius: 50%;
+    }
+
+    &--left::before {
+      right: -2.5rem; // Ajuste punto en línea
+    }
+
+    &--right::before {
+      left: -2.5rem; // Ajuste punto en línea
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__year {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    &__description {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #777;
+    }
+  }
+
+  // Card styles
+  .experience-section{ 
+    &__title{
+      font-size: 1rem;
+    }
+
+    &__subcontent {
+      background: rgba(99 102 241 / 20%);
+      display: flex;
+      justify-content: space-between;
+      font-size: .8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      font-size: .8rem;
+    }
+  }
+  
+}
+
+//Media queries
+@media (min-width: 768px) {
+  .experience-section{
+    &__timeline {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 2rem 1fr; 
+      gap: 0.5rem;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+  
+      // Línea vertical (roadmap)
+      &::before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    
+    &__item {
+      &--left {
+        grid-column: 1;
+        margin: -10rem 0 0 0;
+        text-align: right;
+      }
+  
+      &--right {
+        grid-column: 3;
+        margin: 11rem 0 0 0;
+        text-align: left;
+      }
+  
+      &::before {
+        left: auto;
+        background-color: rgb(99 102 241 );
+      }
+
+      &--left::before {
+        right: -2.1rem; // Ajuste punto en línea
+      }
+  
+      &--right::before {
+        left: -2.1rem; // Ajuste punto en línea
+      }
+    }
+  }
+}
+
