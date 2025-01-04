@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/**
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+*/
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /* declaring the css variables colors */
@@ -37,6 +46,10 @@ body {
   margin: 0;
 }
 
+.text-primary {
+  color: var(--color-primary);
+}
+
 /* HERO */
 
 .lineHeight {
@@ -47,26 +60,4 @@ body {
   .lineHeight {
     line-height: 4rem !important;
   }
-}
-
-media .linkAnimate {
-  display: inline-block;
-  color: var(--color-primary);
-  text-decoration: none;
-}
-
-.linkAnimate::after {
-  content: '';
-  display: block;
-  width: 4px;
-  height: 50px;
-  background: linear-gradient(to right, #758cdf, #758cdf63, #758cdf1b);
-  margin-top: -40px;
-  margin-left: -10px;
-  transition: width .3s;
-}
-
-.linkAnimate:hover::after {
-  width: 125%;
-  transition: width .3s;
 }

@@ -1,7 +1,8 @@
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
-    <section className="flex justify-between p-4 bg-indigo-900 text-white">
-      <h2 className="text-xl font-thin tracking-wider">Johan Bautista <br /> &copy;  2025</h2>
+    <section className="flex justify-between p-4 text-primary">
+      <h2 className="text-xl font-thin tracking-wider">Johan Bautista <br /> &copy;  {year}</h2>
     </section>
   )
 }

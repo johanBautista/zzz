@@ -1,6 +1,17 @@
 import Link from 'next/link'
+import { useState } from 'react'
 
 const AboutSection = () => {
+  const [isDownloading, setIsDownloading] = useState(false)
+
+  const handleDownloadClick = (e) => {
+    e.preventDefault()
+    setIsDownloading(true)
+    setTimeout(() => {
+      window.open('https://drive.google.com/file/d/14pRJryhTL0wrxjmWXvcpjuXwbHaI1IvE/view?usp=sharing', '_blank')
+      setIsDownloading(false)
+    }, 2000)
+  }
   return (
     <div className='md:mb-40 text-lg sm:mt-20 lg:mt-1 mx-auto max-w-[900px]'>
       <section className="sm:flex sm:justify-around">
@@ -8,7 +19,7 @@ const AboutSection = () => {
           <span>
             👨🏻‍💻
           </span>
-          <h2 className='text-indigo-500/75 font-semibold tracking-wider sm:text-end px-1'>
+          <h2 className='text-primary font-semibold tracking-wider sm:text-end px-1'>
             ACERCA DE
           </h2>
         </div>
@@ -26,9 +37,13 @@ const AboutSection = () => {
         </div>
       </section >
 
-      <div className="font-semibold mb-2 w-100 text-end">
-        <Link href='https://drive.google.com/file/d/14pRJryhTL0wrxjmWXvcpjuXwbHaI1IvE/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='linkAnimat'>
-          DESCARGA EL CV
+      <div className="font-semibold mb-2 w-full text-end">
+        <Link href='https://drive.google.com/file/d/14pRJryhTL0wrxjmWXvcpjuXwbHaI1IvE/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='linkAnimat relative inline-block'
+          onClick={handleDownloadClick}>
+          DESCARGAR CV
+          {isDownloading && (
+            <span className="absolute left-0 bottom-0 h-1 bg-indigo-500 animate-download-bar"></span>
+          )}
         </Link>
       </div>
 
