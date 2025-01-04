@@ -2,23 +2,26 @@ import Link from 'next/link'
 
 const AboutSection = () => {
   return (
-    <div className='md:min-h-screen text-lg mb-40 mt-20'>
+    <div className='md:min-h-screen text-lg mb-40 sm:mt-20 lg:mt-1 mx-auto max-w-[900px]'>
       <section className="sm:flex sm:justify-around mb-40">
-        <h2 className="w-4/4 sm:w-1/4 text-indigo-600 font-semibold tracking-wider sm:text-end">ACERCA DE ...</h2>
+        <div className="flex md:justify-end w-4/4 sm:w-1/4  items-center md:items-start">
+          <span>
+            👨🏻‍💻
+          </span>
+          <h2 className='text-indigo-500/75 font-semibold tracking-wider sm:text-end px-1'>
+            ACERCA DE
+          </h2>
+        </div>
         <div className='sm:w-3/4 sm:ml-12'>
 
-          <p className="mb-4 mt-12 sm:mt-0">
-            Actualmente estoy trabajando como front-end developer en <Link href='#' className='text-indigo-600'>Indicator </Link>
-            construyendo interfaces que permitan mejorar el performance de nuestros clientes.
-            Trabajo día a día junto a un equipo de desarrolladores excepcionales de los cuales aprendo constantemente.          </p>
-          <p className="mb-4">
-            Como desarrollador front-end con un pasado en producción <Link href='#' className='text-indigo-600'>audiovisual</Link>, fanático de los
-            encuadres de cámara y las texturas de la imagen, me gusta ver cómo los diseños toman forma
-            y proponen una solución no solo estética sino eficaz a cada necesidad.
+          <p className="mb-6 mt-12 sm:mt-0">
+            Me gusta crear interfaces web modernas y optimizadas para los usuario, soy un apasionado del <span className='text-indigo-500/75 font-medium'>diseño web</span> y las buenas prácticas, habitualmente trabajo con <span className='text-indigo-500/75 font-medium'>Vue</span>, <span className='text-indigo-500/75 font-medium'>JavaScript</span>, <span className='text-indigo-500/75 font-medium'>HTML</span>, y <span className='text-indigo-500/75 font-medium'>CSS</span>, pero también tengo experiencia en otros frameworks de Frontend como React y Nextjs.
           </p>
-          <p className="mb-4">
-            He descubierto en la programación una pasión. Me gusta hacer seguimiento a la evolución de nuevas tecnologías
-            y fortalecer mis habilidades, combinando lo mejor de ambos mundos: la funcionalidad y el diseño.
+          <p className="mb-6">
+            En estos más de 3 años como desarrollador me he enfocado en dar soluciones a productos que optimicen el rendimiento de la interfaz y generen impacto positivo en el negocio.
+          </p>
+          <p className="mb-6">
+            Destaco mi capacidad de trabajar en <span className='text-indigo-500/75 font-medium'>entornos ágiles</span>, así como mi compromiso con el aprendizaje continuo y la adaptación a tecnologías emergentes. Valoro la oportunidad de transformar ideas en experiencias digitales que cumplan con las necesidades del cliente.
           </p>
         </div>
       </section >

@@ -9,7 +9,7 @@ export default function App ({ Component, pageProps }) {
   return (
     <>
     <Head>
-        <title>Johan Bautista DEV</title>
+        <title>Johan Bautista</title>
         <meta
           name="description"
           content="Protfolio personal Johan Bautista frontend developer, javascript, web"
