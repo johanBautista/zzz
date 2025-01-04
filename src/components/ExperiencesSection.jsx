@@ -89,7 +89,7 @@ const ExperiencesSection = () => {
                       </div>
                       <p className={classes['experience-section__description']}>{item.description}</p>
                     </>
-                  )
+                    )
                   : (
                     <>
                       <h3 className={classes['experience-section__title']}>{item.company}</h3>
@@ -99,7 +99,7 @@ const ExperiencesSection = () => {
                       </div>
                       <p className={classes['experience-section__description']}>{item.summary}</p>
                     </>
-                  )}
+                    )}
               </div>
             </div>
           ))}
