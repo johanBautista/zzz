@@ -33,11 +33,11 @@ const ExperiencesSection = () => {
 
   const experienceData = [
     {
-      company: 'Indicator',
+      company: 'Larcier Intersentia',
       role: 'Frontend',
       city: '',
       date: 'Jun 2023 - Dic 2024',
-      summary: 'Creación de componentes para la construcción de páginas web por medio de un backoffice.'
+      summary: 'Creación de componentes para la construcción de páginas web del grupo editorial por medio de un SASS.'
     },
     {
       company: 'Sirion Developers',
@@ -100,7 +100,7 @@ const ExperiencesSection = () => {
                       </div>
                       <p className={classes['experience-section__description']}>{item.description}</p>
                     </>
-                  )
+                    )
                   : (
                     <>
                       <h3 className={classes['experience-section__title']}>{item.company}</h3>
@@ -110,7 +110,7 @@ const ExperiencesSection = () => {
                       </div>
                       <p className={classes['experience-section__description']}>{item.summary}</p>
                     </>
-                  )}
+                    )}
               </div>
             </div>
           ))}

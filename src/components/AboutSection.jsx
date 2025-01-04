@@ -1,4 +1,4 @@
-// import Link from 'next/link'
+import Link from 'next/link'
 
 const AboutSection = () => {
   return (
@@ -25,60 +25,12 @@ const AboutSection = () => {
           </p>
         </div>
       </section >
-      {/***
- *
-      <section className="sm:flex sm:justify-around mb-40">
-        <h2 className="w-1/4 text-indigo-600 font-semibold tracking-wider text-end">HABILIDADES</h2>
-        <div className='mt-4 sm:mt-0 sm:w-3/4 sm:ml-12'>
-          <div className="flex flex-wrap md:flex-no-wrap">
-            <div className="w-1/2 md:w-1/4 mb-4">
-              <h2 className="text-lg font-semibold">LENGUAJES</h2>
-              <ul className='text-sm'>
-                <li>JavaScript ES6</li>
-                <li>Typescript</li>
-                <li>HTML</li>
-                <li>CSS/Sass</li>
-              </ul>
-            </div>
-            <div className="w-1/2 md:w-1/4 mb-4">
-              <h2 className="text-lg font-semibold">FRAMEWORKS</h2>
-              <ul className='text-sm'>
-                <li>React</li>
-                <li>Next</li>
-                <li>Vue</li>
-                <li>Nuxt</li>
-                <li>Node</li>
-              </ul>
-            </div>
-            <div className="w-1/2 md:w-1/4 mb-4">
-              <h2 className="text-lg font-semibold">TOOLS</h2>
-              <ul className='text-sm'>
-                <li>Bash - Zsh</li>
-                <li>Git & Github</li>
-                <li>Postman</li>
-                <li>Chrome DevTools</li>
-                <li>MongoDB</li>
-              </ul>
-            </div>
-            <div className="w-1/2 md:w-1/4 mb-4">
-              <h2 className="text-lg font-semibold">DESIGN</h2>
-              <ul className='text-sm'>
-                <li>Figma</li>
-                <li>AdobeXD</li>
-                <li>Illustrator</li>
-                <li>Item</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section >
 
       <div className="font-semibold mb-2 w-100 text-end">
-        <Link href='https://drive.google.com/file/d/1ADOq4YYqyPmOWy09N533gvyL9BhbFt_b/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='linkAnimat'>
+        <Link href='https://drive.google.com/file/d/14pRJryhTL0wrxjmWXvcpjuXwbHaI1IvE/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='linkAnimat'>
           DESCARGA EL CV
         </Link>
       </div>
- */}
 
     </div >
   )
