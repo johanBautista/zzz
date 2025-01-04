@@ -22,7 +22,8 @@
 
 [data-theme="dark"] {
   --color-primary: #e8e8e8;
-  --color-background: #252b36;
+  /**--color-background: #252b36;37474F*/
+  --color-background: #37474F;
 }
 
 html,
