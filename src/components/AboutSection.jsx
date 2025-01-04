@@ -117,7 +117,7 @@ const AboutSection = () => {
                 Desarollo con metodologías agile e implementación de tests unitarios y e2e.
               </p>
               <ul className='text-sm leading-6 sm:flex'>
-                <li self-baseline className="list-disc	mx-12 sm:list-none sm:mx-2 sm:rounded sm:border-2 sm:border-indigo-200 px-3">React</li>
+                <li className="self-baseline list-disc	mx-12 sm:list-none sm:mx-2 sm:rounded sm:border-2 sm:border-indigo-200 px-3">React</li>
                 <li className="self-baseline list-disc	mx-12 sm:list-none sm:mx-2 sm:rounded sm:border-2 sm:border-indigo-200 px-3">React Native</li>
                 <li className="self-baseline list-disc	mx-12 sm:list-none sm:mx-2 sm:rounded sm:border-2 sm:border-indigo-200 px-3">Vue</li>
                 <li className="self-baseline list-disc	mx-12 sm:list-none sm:mx-2 sm:rounded sm:border-2 sm:border-indigo-200 px-3">Nuxt</li>
