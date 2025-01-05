@@ -14,8 +14,8 @@ const AboutSection = () => {
   }
   return (
     <div className='md:mb-40 text-lg sm:mt-20 lg:mt-1 mx-auto max-w-[900px]'>
-      <section className="sm:flex sm:justify-around">
-        <div className="flex w-4/4 sm:w-1/4  items-center md:items-start">
+      <section className="md:flex md:justify-around">
+        <div className="flex w-4/4 md:w-1/4  items-center md:items-start mb-4">
           <span>
             👨🏻‍💻
           </span>
@@ -26,10 +26,10 @@ const AboutSection = () => {
 
         <div className='sm:w-3/4'>
           <p className="mb-6 mt-12 sm:mt-0">
-            Me gusta crear interfaces web modernas y optimizadas para los usuarios, soy un apasionado del <span className='text-indigo-500/75 font-medium'>diseño web</span> y las buenas prácticas, habitualmente trabajo con <span className='text-indigo-500/75 font-medium'>Vue</span>, <span className='text-indigo-500/75 font-medium'>JavaScript</span>, <span className='text-indigo-500/75 font-medium'>HTML</span>, y <span className='text-indigo-500/75 font-medium'>CSS</span>, pero también tengo experiencia en otros frameworks de Frontend como <span className='text-indigo-500/75 font-medium'>React</span> y <span className='text-indigo-500/75 font-medium'>Nextjs</span>.
+            Me gusta crear interfaces web modernas y optimizadas, soy un apasionado del <span className='text-indigo-500/75 font-medium'>diseño web</span> y las buenas prácticas, habitualmente trabajo con <span className='text-indigo-500/75 font-medium'>Vue</span>, <span className='text-indigo-500/75 font-medium'>JavaScript</span>, <span className='text-indigo-500/75 font-medium'>HTML</span>, y <span className='text-indigo-500/75 font-medium'>CSS</span>, pero también tengo experiencia en otros frameworks de Frontend como <span className='text-indigo-500/75 font-medium'>React</span> y <span className='text-indigo-500/75 font-medium'>Nextjs</span>.
           </p>
           <p className="mb-6">
-            En estos más de 3 años como desarrollador me he enfocado en dar soluciones a productos que optimicen el <span className="text-indigo-500/75 font-medium">rendimiento</span> de la interfaz y generen un impacto positivo en negocio.
+            En estos más de 3 años como desarrollador me he enfocado en mejorar el <span className="text-indigo-500/75 font-medium">rendimiento</span> y apariencia de las interfaces generamdo un impacto positivo en los usuarios.
           </p>
           <p className="mb-6">
             Destaco mi capacidad de trabajar en <span className='text-indigo-500/75 font-medium'>entornos ágiles</span>, así como mi compromiso con el aprendizaje continuo y la adaptación a tecnologías emergentes. Valoro la oportunidad de transformar ideas en <span className='text-indigo-500/75 font-medium'>experiencias digitales</span> que cumplan con las necesidades del cliente.
