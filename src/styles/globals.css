@@ -26,7 +26,7 @@
   --color-button-hover: #324caa;
   --color-button-text: #fffcfc;
   --color-anchor: #e3870f;
-  --color-nav-hover: #fa0e0e;
+  --color-icon-hover: rgba(143, 188, 143, 0.744);
 }
 
 [data-theme="dark"] {
@@ -54,6 +54,15 @@ body {
 
 .lineHeight {
   line-height: 2.3rem;
+}
+
+.svg-icon {
+  fill: var(--color-primary);
+  transition: fill 0.3s ease;
+}
+
+.svg-icon:hover {
+  fill: var(--color-icon-hover);
 }
 
 @media(min-width:700px) {

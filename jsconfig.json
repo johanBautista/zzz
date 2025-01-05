@@ -5,6 +5,7 @@
       "@components/*": ["src/components/*"],
       "@icons/*": ["public/assets/icons/*"],
       "@images/*": ["public/assets/images/*"],
+      "@svgs/*": ["public/assets/svgs/*"],
       "@styles/*": ["src/styles/*"],
     }
   },
