@@ -38,7 +38,7 @@ const AboutSection = () => {
       </section >
 
       <div className="font-semibold mb-2 w-full text-end">
-        <Link href='https://drive.google.com/file/d/14pRJryhTL0wrxjmWXvcpjuXwbHaI1IvE/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='linkAnimat relative inline-block'
+        <Link href='https://drive.google.com/file/d/1ON_Tl7D6KVI2DaiqCG0TzgRdh4U7gTVC/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='linkAnimat relative inline-block'
           onClick={handleDownloadClick}>
           DESCARGAR CV
           {isDownloading && (
