@@ -8,7 +8,7 @@ const AboutSection = () => {
     e.preventDefault()
     setIsDownloading(true)
     setTimeout(() => {
-      window.open('https://drive.google.com/file/d/14pRJryhTL0wrxjmWXvcpjuXwbHaI1IvE/view?usp=sharing', '_blank')
+      window.open('https://drive.google.com/file/d/1ON_Tl7D6KVI2DaiqCG0TzgRdh4U7gTVC/view?usp=sharing', '_blank')
       setIsDownloading(false)
     }, 2000)
   }
